@@ -49,9 +49,9 @@ class PokemonTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "pokemonDetail" {
-            let viewCon = segue.destination as! ViewController
+            let viewCon = segue.destination as! PokemonDetailViewController
             let poke = sender as! PokemonList
-            viewCon.pokemonDetail = poke.name
+            viewCon.pokemonDetail = poke
         }
     }
     

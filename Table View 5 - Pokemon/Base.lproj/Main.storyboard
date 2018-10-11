@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="-177" y="127"/>
         </scene>
-        <!--View Controller-->
+        <!--Pokemon Detail View Controller-->
         <scene sceneID="IUU-S3-aOF">
             <objects>
-                <viewController id="Ijo-ko-nil" customClass="ViewController" customModule="Table_View_5___Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ijo-ko-nil" customClass="PokemonDetailViewController" customModule="Table_View_5___Pokemon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kVY-L2-OBE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

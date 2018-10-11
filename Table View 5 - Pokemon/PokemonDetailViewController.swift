@@ -8,16 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PokemonDetailViewController: UIViewController {
     
-    var pokemonDetail : String?
+    var pokemonDetail : PokemonList?
     
     @IBOutlet weak var pokemonName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pokemonName.text = pokemonDetail
+        pokemonName.text = pokemonDetail?.name
         
     }
     

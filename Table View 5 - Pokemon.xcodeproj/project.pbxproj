@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C5116A5216E58C800D3A4FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5116A4216E58C800D3A4FC /* AppDelegate.swift */; };
-		6C5116A7216E58C800D3A4FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5116A6216E58C800D3A4FC /* ViewController.swift */; };
+		6C5116A7216E58C800D3A4FC /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5116A6216E58C800D3A4FC /* PokemonDetailViewController.swift */; };
 		6C5116AA216E58C800D3A4FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5116A8216E58C800D3A4FC /* Main.storyboard */; };
 		6C5116AC216E58CB00D3A4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5116AB216E58CB00D3A4FC /* Assets.xcassets */; };
 		6C5116AF216E58CB00D3A4FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5116AD216E58CB00D3A4FC /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		6C5116A1216E58C800D3A4FC /* Table View 5 - Pokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table View 5 - Pokemon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5116A4216E58C800D3A4FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C5116A6216E58C800D3A4FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C5116A6216E58C800D3A4FC /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
 		6C5116A9216E58C800D3A4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C5116AB216E58CB00D3A4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C5116AE216E58CB00D3A4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				6C5116A4216E58C800D3A4FC /* AppDelegate.swift */,
-				6C5116A6216E58C800D3A4FC /* ViewController.swift */,
+				6C5116A6216E58C800D3A4FC /* PokemonDetailViewController.swift */,
 				6C5116D2216E5A5300D3A4FC /* PokemonTableViewController.swift */,
 				6C5116D4216E5A7D00D3A4FC /* Pokemon.swift */,
 				6C5116A8216E58C800D3A4FC /* Main.storyboard */,
@@ -264,7 +264,7 @@
 			files = (
 				6C5116D3216E5A5300D3A4FC /* PokemonTableViewController.swift in Sources */,
 				6C5116D5216E5A7D00D3A4FC /* Pokemon.swift in Sources */,
-				6C5116A7216E58C800D3A4FC /* ViewController.swift in Sources */,
+				6C5116A7216E58C800D3A4FC /* PokemonDetailViewController.swift in Sources */,
 				6C5116A5216E58C800D3A4FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

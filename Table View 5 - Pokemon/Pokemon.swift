@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+let imageCached = NSCache<AnyObject, AnyObject>()
+
 struct PokemonList : Decodable {
     var name : String
     var url : String
@@ -22,6 +24,11 @@ struct PokemonList : Decodable {
             return nil
         }
         
+        if let cachedImage = imageCached.object(forKey: imgUrl as AnyObject) as? UIImage {
+            print("image trovata")
+            return cachedImage
+        }
+        
         print(imgUrl)
         
         guard let imgData = try? Data(contentsOf: imgUrl) else {
@@ -31,6 +38,8 @@ struct PokemonList : Decodable {
         guard let pokImage = UIImage(data: imgData) else {
             return nil
         }
+        
+        imageCached.setObject(pokImage, forKey: imgUrl as AnyObject)
         
         return pokImage
     }
