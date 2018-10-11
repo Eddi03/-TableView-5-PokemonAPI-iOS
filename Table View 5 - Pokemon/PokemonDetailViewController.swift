@@ -13,11 +13,13 @@ class PokemonDetailViewController: UIViewController {
     var pokemonDetail : PokemonList?
     
     @IBOutlet weak var pokemonName: UILabel!
+    @IBOutlet weak var pokImg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         pokemonName.text = pokemonDetail?.name
+        pokImg.image = pokemonDetail?.getImage()
         
     }
     

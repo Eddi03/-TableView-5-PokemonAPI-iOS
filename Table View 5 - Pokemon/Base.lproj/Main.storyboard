@@ -58,21 +58,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bf-jt-EIa">
-                                <rect key="frame" x="99" y="317.5" width="177" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bf-jt-EIa">
+                                <rect key="frame" x="10" y="114" width="355" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YJn-Wv-lla">
+                                <rect key="frame" x="67" y="192" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4Bf-jt-EIa" firstAttribute="centerY" secondItem="kVY-L2-OBE" secondAttribute="centerY" id="2nb-Tw-ONo"/>
-                            <constraint firstItem="4Bf-jt-EIa" firstAttribute="centerX" secondItem="kVY-L2-OBE" secondAttribute="centerX" id="j3n-Oo-DfV"/>
+                            <constraint firstItem="YJn-Wv-lla" firstAttribute="leading" secondItem="vHU-hX-4id" secondAttribute="leading" constant="67" id="08X-yC-1u3"/>
+                            <constraint firstItem="vHU-hX-4id" firstAttribute="bottom" secondItem="YJn-Wv-lla" secondAttribute="bottom" constant="347" id="AW4-hV-KEF"/>
+                            <constraint firstItem="YJn-Wv-lla" firstAttribute="top" secondItem="4Bf-jt-EIa" secondAttribute="bottom" constant="46" id="Z3j-sB-Za1"/>
+                            <constraint firstItem="4Bf-jt-EIa" firstAttribute="leading" secondItem="vHU-hX-4id" secondAttribute="leading" constant="10" id="bow-Cw-piu"/>
+                            <constraint firstItem="vHU-hX-4id" firstAttribute="trailing" secondItem="4Bf-jt-EIa" secondAttribute="trailing" constant="10" id="cv5-iF-OcU"/>
+                            <constraint firstItem="vHU-hX-4id" firstAttribute="trailing" secondItem="YJn-Wv-lla" secondAttribute="trailing" constant="68" id="exB-05-WOf"/>
+                            <constraint firstItem="4Bf-jt-EIa" firstAttribute="top" secondItem="vHU-hX-4id" secondAttribute="top" constant="50" id="lBZ-gc-7WV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vHU-hX-4id"/>
                     </view>
                     <connections>
+                        <outlet property="pokImg" destination="YJn-Wv-lla" id="NFj-Kd-Bj8"/>
                         <outlet property="pokemonName" destination="4Bf-jt-EIa" id="oAW-Hl-Dfe"/>
                     </connections>
                 </viewController>
