@@ -9,12 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var pokemonDetail : String?
+    
+    @IBOutlet weak var pokemonName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        pokemonName.text = pokemonDetail
+        
     }
-
-
+    
+    @IBAction func didClickBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        //performSegue(withIdentifier: "backToPokemonList", sender: nil)
+    }
+    
 }
-
